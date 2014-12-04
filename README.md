@@ -4,4 +4,4 @@ encodeToGb2312
 
 `<script type="text/javascript" src="encodeToGb2312.js"></script>`
 
-encodeToGb2312(str)
+`encodeToGb2312(str)`
