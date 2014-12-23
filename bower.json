@@ -1,0 +1,21 @@
+{
+  "name": "encodeToGb2312",
+  "main": "encodeToGb2312.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/liuxiaodong/encodeToGb2312",
+  "authors": [
+    "liuxiaodong <liuxiaodong1989@gmail.com>"
+  ],
+  "description": "encode string to gb2312",
+  "keywords": [
+    "gb2312"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
