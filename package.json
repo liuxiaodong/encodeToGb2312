@@ -1,0 +1,33 @@
+{
+  "name": "encodeToGb2312",
+  "version": "0.0.1",
+  "description": "encode string to gb2312",
+  "main": "encodeToGb2312.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liuxiaodong/encodeToGb2312.git"
+  },
+  "keywords": [
+    "gb2312",
+    "encode",
+    "encodeToGb2312"
+  ],
+  "author": "leaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuxiaodong/encodeToGb2312/issues"
+  },
+  "homepage": "https://github.com/liuxiaodong/encodeToGb2312",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "gulp-rename": "^1.2.0",
+    "gulp-uglify": "^1.1.0",
+    "rimraf": "^2.3.2"
+  }
+}
