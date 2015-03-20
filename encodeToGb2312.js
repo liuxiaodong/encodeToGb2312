@@ -1,4 +1,6 @@
-var json = {
+(function(){
+
+  var json = {
     "00A4":"A1E8",
     "00A7":"A1EC",
     "00A8":"A1A7",
@@ -7444,26 +7446,38 @@ var json = {
     "FFE1":"A1EA",
     "FFE3":"A3FE",
     "FFE5":"A3A4"
-}
+  };
 
-function encodeToGb2312(str){
+  var encodeToGb2312 = function(str){
     var strOut="";
     for(var i = 0; i < str.length; i++){
-        var c = str.charAt(i); 
-        var code = str.charCodeAt(i);
-        var gcode = json[code.toString(16).toUpperCase()];
-        if(gcode && gcode.length % 2 !== 0) gcode = "0" + gcode;
-        if(c==" ") {
-          strOut += "20";
-        }else if(code < 19968){
-          var b = str.charCodeAt(i).toString(16);
-          if(b && b.length % 2 !== 0) b = "0" + b;
-          strOut += b;
-        } else if(gcode){
-          strOut += gcode;
-        } else{
-          throw Error("not match");
-        }
+      var c = str.charAt(i); 
+      var code = str.charCodeAt(i);
+      var gcode = json[code.toString(16).toUpperCase()];
+      if(gcode && gcode.length % 2 !== 0) gcode = "0" + gcode;
+      if(c==" ") {
+        strOut += "20";
+      }else if(code < 19968){
+        var b = str.charCodeAt(i).toString(16);
+        if(b && b.length % 2 !== 0) b = "0" + b;
+        strOut += b;
+      } else if(gcode){
+        strOut += gcode;
+      } else{
+        throw Error("not match");
+      }
     }
     return strOut;
-}
+  }
+
+  if (typeof exports !== 'undefined') {
+    if (typeof module !== 'undefined' && module.exports) {
+      exports = module.exports = encodeToGb2312;
+    }
+    exports.encodeToGb2312 = encodeToGb2312;
+  } else {
+    this.encodeToGb2312 = encodeToGb2312;
+  }
+
+
+}).call(this);
