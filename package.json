@@ -1,5 +1,5 @@
 {
-  "name": "encodeToGb2312",
+  "name": "encode-gb2312",
   "version": "0.0.1",
   "description": "encode string to gb2312",
   "main": "encodeToGb2312.js",
@@ -16,6 +16,7 @@
   "keywords": [
     "gb2312",
     "encode",
+    "encode-gb2312",
     "encodeToGb2312"
   ],
   "author": "leaf",
