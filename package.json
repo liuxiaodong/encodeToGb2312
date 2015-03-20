@@ -1,6 +1,6 @@
 {
   "name": "encode-gb2312",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "encode string to gb2312",
   "main": "encodeToGb2312.js",
   "directories": {
